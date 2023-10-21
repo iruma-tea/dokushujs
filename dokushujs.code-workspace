@@ -4,5 +4,16 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"[javascript]": {
+			"editor.formatOnSave": true,
+			"editor.maxTokenizationLineLength": 2500
+		},
+		"[html]": {
+			"editor.formatOnSave": true,
+			"editor.suggest.insertMode": "replace",
+			"editor.formatOnType": true
+		},
+		"liveServer.settings.AdvanceCustomBrowserCmdLine": "/mnt/c/Program Files/Google/Chrome/Application/chrome.exe",
+	}
 }
