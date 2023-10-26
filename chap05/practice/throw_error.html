@@ -1,0 +1,12 @@
+<script>
+    let greeting;
+
+    try {
+        if (typeof greeting !== "string") {
+            throw new Error("不正なデータ型です。");
+        }
+        console.log(`${greeting}、いい天気ですね。`);
+    } catch (e) {
+        console.log(e);
+    }
+</script>

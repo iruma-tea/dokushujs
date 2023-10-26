@@ -1,0 +1,13 @@
+<script>
+    try {
+        const num = 1;
+        num.toUpperCase();
+        let val1 = val2 + 1;
+    } catch (error) {
+        if (error instanceof TypeError) {
+            console.log("TypeErrorが発生したときの処理");
+        } else if (error instanceof ReferenceError) {
+            console.log("RefereceErrorが発生したときの処理");
+        }
+    }
+</script>
