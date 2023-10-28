@@ -1,0 +1,17 @@
+<script>
+    function saySomething(callback) {
+        const result = callback();
+        console.log(`${result}、独習太郎！`);
+    }
+
+    function hell() {
+        return "こんにちは";
+    }
+
+    function bye() {
+        return "さようなら";
+    }
+
+    saySomething(hell);
+    saySomething(bye);
+</script>
