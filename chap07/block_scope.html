@@ -1,0 +1,17 @@
+<script>
+    if (true) {
+        /* ブロックスコープ開始 */
+        let letVal = "letで宣言";
+        const constFn = function() { console.log("constで宣言");};
+        var varVal = "varで宣言";
+        function fnStmt() { console.log("関数宣言"); }
+        /* ブロックスコープ終了 */
+    }
+
+    if (true) {
+        console.log(letVal);
+        constFn();
+        console.log(varVal);
+        fnStmt();
+    }
+</script>

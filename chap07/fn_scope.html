@@ -1,0 +1,15 @@
+<script>
+    function fnA() {
+        let valA = "fnA内の値";
+        const subA = function() { console.log("fnA内の関数"); };
+        console.log(valA);
+        subA();
+    }
+    fnA();
+
+    function fnB() {
+        console.log(valA);
+        subA();
+    }
+    fnB();
+</script>
