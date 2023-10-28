@@ -1,0 +1,18 @@
+<script>
+    function hello() {
+        return "Hello World";
+    }
+    console.log(hello());
+    const result = hello();
+    console.log(result);
+
+    function hello(personName) {
+        if (typeof personName !== "string") {
+            console.log("引数に文字列を渡してください。");
+            return;
+        }
+        console.log(`こんにちは、${personName}`);
+    }
+    hello("太郎");
+    hello(1);
+</script>
