@@ -1,0 +1,13 @@
+<script>
+    function incrementFactory() {
+        let count = 0;
+        return function() {
+            console.log(++count);
+        }
+    }
+
+    const increment = incrementFactory();
+    increment();
+    increment();
+    increment();
+</script>

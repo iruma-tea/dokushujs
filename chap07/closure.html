@@ -1,0 +1,11 @@
+<script>
+    function factory(greeting) {
+        function innerFn(name) {
+            console.log(greeting + " " + name);
+        }
+        return innerFn;
+    }
+
+    const hello = factory("こんにちは");
+    hello("太郎");
+</script>
