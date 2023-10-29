@@ -1,0 +1,12 @@
+<script>
+    function hello(greeting) {
+        console.log(greeting + this.name);
+    }
+
+    const taro = {
+        name: "太郎",
+    };
+
+    const helloTaro = hello.bind(taro, "こんにちは");
+    helloTaro();
+</script>
