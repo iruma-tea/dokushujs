@@ -1,0 +1,23 @@
+<script>
+    const fruit1 = {
+        apple: function() {
+            console.log("リンゴ");
+        },
+    };
+
+    const fruit2 = Object.create(fruit1);
+
+    fruit2.banana = function() {
+        console.log("バナナ");
+    ;}
+
+    const fruit3 = Object.create(fruit2);
+
+    fruit3.melon = function() {
+        console.log("メロン");
+    };
+
+    fruit3.apple();
+    fruit3.banana();
+    fruit3.melon();
+</script>

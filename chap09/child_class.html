@@ -1,0 +1,25 @@
+<script>
+    class Parent {
+        constructor(value) {
+            this.parentProp = value;
+        }
+        parentMethod() {
+            console.log("親クラスのメソッド");
+        }
+    }
+
+    class Child extends Parent {
+        constructor(parentProp, childProp) {
+            super(parentProp);
+            this.childProp = childProp;
+        }
+        childMethod() {
+            console.log(`子から親にアクセス[ ${this.parentProp} ]`);
+        }
+    }
+
+    const childObject = new Child("親", "子");
+    console.log(childObject);
+    childObject.parentMethod();
+    childObject.childMethod();
+</script>
