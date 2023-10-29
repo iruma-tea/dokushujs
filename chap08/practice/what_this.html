@@ -1,0 +1,12 @@
+<script>
+    window.name = "花子";
+    function hello() {
+        console.log("こんにちは、" + this.name);
+    }
+    const trao = {
+        name: "太郎",
+        hello: hello,
+    };
+    hello();
+    trao.hello();
+</script>
