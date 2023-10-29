@@ -1,0 +1,14 @@
+<script>
+    class Parent {
+        method() { console.log("親クラスのメソッド"); }
+    }
+    class Child extends Parent {
+        method() { console.log("子クラスのメソッド"); }
+        myMethod() { this.method(); }
+        parentMethod() { super.method(); }
+    }
+
+    const obj = new Child;
+    obj.myMethod();
+    obj.parentMethod();
+</script>
