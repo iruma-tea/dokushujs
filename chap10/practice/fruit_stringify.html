@@ -1,0 +1,12 @@
+<script>
+    const fruits = { banana: "うまい", apple: "普通", orange: "微妙", other: { grape: "うまい" } };
+    console.log(JSON.stringify(fruits, ["banana", "apple"]));
+
+    function replacer(key, value) {
+        if (typeof value === "string" && value !== "うまい") {
+            return;
+        }
+        return value;
+    }
+    console.log(JSON.stringify(fruits, replacer));
+</script>
