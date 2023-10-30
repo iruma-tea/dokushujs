@@ -1,0 +1,21 @@
+<script>
+    localStorage.setItem("apple", "リンゴ");
+    localStorage.getItem("apple");
+
+    localStorage.setItem("apple", "リンゴ");
+    localStorage.removeItem("apple");
+    console.log(localStorage.getItem("apple"));
+
+    localStorage.setItem("apple", "リンゴ");
+    localStorage.setItem("banana", "バナナ");
+    localStorage.clear();
+    console.log(localStorage.length);
+
+    localStorage.setItem("apple", "リンゴ");
+    localStorage.setItem("banana", "バナナ");
+    for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        const value = localStorage.getItem(key);
+        console.log(key, value);
+    }
+</script>
