@@ -1,0 +1,8 @@
+<script>
+    const wset = new WeakSet();
+    let obj = {};
+    wset.add(obj);
+    wset.add(obj);
+    console.log(wset);
+    wset.add(1); // オブジェクト以外を登録するとエラーが発生！！
+</script>
