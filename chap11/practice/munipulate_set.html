@@ -1,0 +1,15 @@
+<script>
+    const set = new Set(["八宝菜", "餃子", "回鍋肉", "青椒肉絲", "餃子"]);
+
+    set.add("杏仁豆腐");
+    set.add("餃子");
+    console.log(set);
+
+    set.delete("回鍋肉");
+
+    console.log(set.has("八宝菜"));
+
+    const arry = Array.from(set);
+    console.log(arry.join(" "));
+
+</script>
