@@ -1,0 +1,13 @@
+<script>
+    function* fruits() {
+        yield "バナナ";
+        yield "リンゴ";
+        yield "メロン";
+    }
+
+    const iterableObjedt = fruits();
+
+    for (const fruit of iterableObjedt) {
+        console.log(fruit);
+    }
+</script>
