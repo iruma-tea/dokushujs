@@ -1,0 +1,15 @@
+<script>
+    let promResolve, promReject;
+
+    const prom = new Promise((resolve, reject) => {
+        promResolve = resolve;
+        promReject = reject;
+    });
+
+    console.log(prom);
+
+    promResolve("引数");
+    // promReject();
+
+    console.log(prom);
+</script>
