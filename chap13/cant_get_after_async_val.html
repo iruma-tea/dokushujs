@@ -1,0 +1,13 @@
+<script>
+    let val = -1;
+
+    function timer() {
+        setTimeout(function(){
+            val = Math.floor(Math.random() * 11);
+        }, 1000);
+    }
+
+    timer();
+
+    console.log(val); // -1
+</script>
