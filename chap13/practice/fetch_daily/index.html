@@ -1,0 +1,9 @@
+<script>
+    async function myFetchFn() {
+        const res = await fetch("daily.json");
+        const jsonObj = await res.json();
+        console.log(jsonObj.word);
+    }
+
+    myFetchFn();
+</script>
