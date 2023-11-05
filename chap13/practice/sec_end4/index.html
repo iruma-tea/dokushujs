@@ -1,0 +1,18 @@
+<script>
+    function fetchJSON(file) {
+        return fetch(file).then(res => res.json());
+    }
+
+    async function main() {
+        const fruits = await fetchJSON("fruit.json");
+        const fruitTags = await fetchJSON("fruit-tag.json");
+
+        for (const {key, value} of fruits) {
+            const tags = fruitTags[key];
+            const tagStr = tags.join(",");
+            console.log(`${value}は次の特徴があります。(${tagStr})`);
+        }
+    }
+
+    main();
+</script>
