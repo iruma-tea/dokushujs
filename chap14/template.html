@@ -1,0 +1,11 @@
+<body>
+    <!-- 新しい要素をここに追加したい -->
+    <template id="tmpl">
+        <span>テンプレートHTMLを定義</span>
+    </template>
+    <script>
+        const tmpl = document.querySelector("#tmpl");
+        const targetNewElement = tmpl.content;
+        document.body.prepend(targetNewElement);
+    </script>
+</body>
