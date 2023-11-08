@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>タイトル</title>
+    </head>
+    <body>
+        <h1>見出し</h1>
+        <p id="idAttr" class="classAttr">
+            これは段落です。<span>スパンに過去まれています。</span>
+        </p>
+        <p class="classAttr">これは段落です。</p>
+        <input type="text" name="nameAttr" />
+        <input type="password" name="pwdAttr" />
+        <script>
+            document.querySelector("#idAttr");
+            document.getElementById("idAttr");
+
+            document.querySelectorAll(".classAttr");
+
+            document.querySelectorAll("p");
+
+            document.querySelector("input[type='text']");
+
+            const sapn = document.querySelector("span");
+            sapn.closest("p");
+
+            document.querySelector("h1 ~ input[type='password']");
+
+            document.querySelector("#idAttr > *");
+            document.querySelector("#idAttr").firstElementChild;
+
+            document.querySelector("input[type='text'] + *");
+            document.querySelector("input[type='text']").nextElementSibling;
+        </script>
+    </body>
+</html>
