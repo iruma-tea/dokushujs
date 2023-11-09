@@ -1,0 +1,14 @@
+<div></div>
+<style>
+    div {
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        transform: scale(5);
+    }
+</style>
+<script>
+    const div = document.querySelector("div");
+    console.log(div.offsetHeight);
+    console.log(div.getBoundingClientRect().height);
+</script>
