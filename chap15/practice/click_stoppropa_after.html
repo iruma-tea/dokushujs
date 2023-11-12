@@ -1,0 +1,40 @@
+<body>
+    <div id="container">
+        <span>#container</span>
+        <div id="wrapper">
+            <span>#wrapper</span>
+            <div id="target"><span>#target</span></div>
+        </div>
+    </div>
+    <script>
+        const container = document.querySelector("#container");
+        const wrapper = document.querySelector("#wrapper");
+        const target = document.querySelector("#target");
+
+        function clickDialog(element, isCapture = false) {
+            element.addEventListener("click", () => {
+                const spanText = element.firstElementChild.textContent;
+                alert(`${spanText}のクリックイベントが発火しました。`);
+            }, isCapture);
+        }
+
+        // アクションを登録
+        clickDialog(container);
+        clickDialog(wrapper);
+        clickDialog(target);
+
+        // クリックイベントの伝播を停止するアクションの追加
+        wrapper.addEventListener("click", event => {
+            event.stopPropagation();
+        });
+    </script>
+    <style>
+        div {
+            margin: 10px;
+            border: 1px solid black;
+        }
+        body {
+            background-color: cornsilk;
+        }
+    </style>
+</body>
