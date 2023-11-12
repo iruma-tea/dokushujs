@@ -1,0 +1,29 @@
+<article>
+    <div></div>
+</article>
+<script>
+    /* ここに記述 */
+    const article = document.querySelector("article");
+    const div = document.querySelector("div");
+
+    article.addEventListener("click", () => {
+        alert("arrticleがクリックされました。")
+    });
+
+    div.addEventListener("click", event => {
+        event.stopPropagation();
+        alert("divがクリックされました。");
+    });
+</script>
+<style>
+    article,
+    div {
+        padding: 30px;
+    }
+    article {
+        background-color: crimson;
+    }
+    div {
+        background-color: cyan;
+    }
+</style>
