@@ -1,0 +1,16 @@
+<script>
+    // undefinedは書き込み不可のwindowsのプロパティ
+    window.undefined = "エラーにはなりませんが値も変わりません。";
+    console.log(window.undefined);
+    const obj1 = { val: 0};
+    Reflect.defineProperty(obj1, "val", {writable: false});
+    obj1.val = "エラーになりませんが値も変わりません。"
+    console.log(obj1.val);
+</script>
+<script>
+    "use strict";
+    window.undefined = "エラーが発生します。";
+    const obj = {val: 0};
+    Reflect.defineProperty(obj, "val", {writable: false});
+    obj.val = "エラーが発生します。"
+</script>
