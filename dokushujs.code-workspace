@@ -2,9 +2,17 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../dokushujs.wiki"
 		}
 	],
 	"settings": {
+		"files.encoding": "utf8",
+        "terminal.integrated.cwd": ".",
+        "workbench.iconTheme": "vscode-icons",
+        "workbench.colorTheme": "Monokai",
+        "files.eol": "\n",
 		"[javascript]": {
 			"editor.formatOnSave": true,
 			"editor.maxTokenizationLineLength": 2500
