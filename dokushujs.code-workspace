@@ -23,5 +23,6 @@
 			"editor.formatOnType": true
 		},
 		"liveServer.settings.AdvanceCustomBrowserCmdLine": "/mnt/c/Program Files/Google/Chrome/Application/chrome.exe",
+		"liveServer.settings.multiRootWorkspaceName": "dokushujs",
 	}
 }
